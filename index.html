@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Магазин (данные + render)</title>
+</head>
+<body>
+    <header>
+        <section class="header-h">
+            <h1>Hello</h1>
+        </section>
+        <section class="header-section">
+            <button id="button1" class="header-section_button">Сменить заголовок</button>
+            <button id="button2" class="header-section_button">Добавить товар</button>
+            <button id="button3" class="header-section_button">Сменить цвета</button>
+            <button id="button4" class="header-section_button">Очистить всё</button>
+        </section>
+    </header>
+    
+   <div class="loyaut">
+  <div class="header-row">  <!-- сделал еще один контейнер для того чтобы выровнить фразу "количество товаров" -->
+    <aside>
+      <section class="sidebar">
+        <h3>Фильтры</h3>
+        <label><input type="checkbox" id="elec" value="electronics" /> Электроника</label>
+        <label><input type="checkbox" id="clothing" value="clothing" /> Одежда</label>
+        <label><input type="checkbox" id="fishing-rods" value="fishing-rods" /> Удочки</label>
+        <label><input type="checkbox" id="foodstuff" value="foodstuff" /> Продукты питания</label>
+        <label><input type="checkbox" id="books" value="books" /> Книги</label>
+        <button id="apply-filters">Применить фильтры</button>
+      </section>
+    </aside>
+    <aside>
+        <section class="statistics">
+            <div class="stats-row">
+                <p>Количество товаров: </p>
+                <div class="items-current" data-counter-total><b>0</b></div>
+            </div>
+            <div class="stats-row"> 
+                <p>Удалено товаров:</p>
+                <div class="items-current" data-counter-delete><b>0</b></div>
+            </div>
+            <div class="stats-row"> 
+                <p>В корзине:</p>
+                <div class="items-current" data-counter-plus><b>0</b></div>
+            </div>
+        </section>
+    </aside>
+  </div>
+  <main id="products-container">
+
+  </main>
+</div>
+    
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
